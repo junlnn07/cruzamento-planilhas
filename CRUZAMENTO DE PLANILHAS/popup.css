@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+}
+
+.profile-img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1f6feb;
+}
+
+.developer {
+    display: block;
+    font-size: 10px;
+    color: #58a6ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+}
+
+/* Novo estilo adicionado para o cabeçalho do desenvolvedor com foto */
+.developer-header {
+    display: flex;
+    align-items: center;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    gap: 12px;
+}
+
+.developer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    width: 430px;
+    min-height: 600px;
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.app {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 18px;
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1f6feb;
+    border-radius: 12px;
+
+    font-size: 22px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+header p {
+    margin: 4px 0 0;
+
+    color: #8b949e;
+    font-size: 12px;
+}
+
+.card {
+    background: #161b22;
+
+    border: 1px solid #30363d;
+    border-radius: 12px;
+
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    color: #8b949e;
+
+    margin-bottom: 7px;
+}
+
+.file-box {
+    background: #0d1117;
+
+    border: 1px solid #30363d;
+    border-radius: 8px;
+
+    padding: 10px;
+
+    margin-bottom: 14px;
+}
+
+.file-box:last-child {
+    margin-bottom: 0;
+}
+
+input[type="file"] {
+    width: 100%;
+
+    color: #8b949e;
+
+    font-size: 11px;
+}
+
+.file-box span {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #58a6ff;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#addColumn {
+    background: #21262d;
+
+    color: #58a6ff;
+
+    padding: 7px 10px;
+
+    border: 0;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+#addColumn:hover {
+    background: #30363d;
+}
+
+.column {
+    display: flex;
+
+    gap: 7px;
+
+    margin-bottom: 7px;
+}
+
+.column input {
+    flex: 1;
+
+    background: #0d1117;
+
+    color: white;
+
+    border: 1px solid #30363d;
+    border-radius: 7px;
+
+    padding: 9px;
+
+    outline: none;
+}
+
+.column input:focus {
+    border-color: #1f6feb;
+}
+
+.remove {
+    width: 36px;
+
+    background: #3d1d24;
+
+    color: #ff7b8b;
+
+    border: 0;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.hint {
+    color: #6e7681;
+
+    font-size: 10px;
+
+    margin: 9px 0 0;
+}
+
+.process,
+.download {
+    width: 100%;
+
+    padding: 13px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    border: 0;
+    border-radius: 9px;
+
+    cursor: pointer;
+}
+
+.process {
+    background: #1f6feb;
+
+    color: white;
+}
+
+.process:hover {
+    background: #388bfd;
+}
+
+.process:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+.status {
+    background: #161b22;
+
+    border: 1px solid #30363d;
+    border-radius: 8px;
+
+    padding: 11px;
+
+    margin-top: 12px;
+
+    color: #8b949e;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.stats div {
+    flex: 1;
+
+    background: #161b22;
+
+    border: 1px solid #30363d;
+    border-radius: 8px;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+
+    font-size: 17px;
+}
+
+.stats span {
+    color: #8b949e;
+
+    font-size: 10px;
+}
+
+.download {
+    background: #238636;
+
+    color: white;
+
+    margin-top: 10px;
+}
+
+.download:hover {
+    background: #2ea043;
+}
+
+.download:disabled {
+    background: #21262d;
+
+    color: #484f58;
+
+    cursor: not-allowed;
+}
+
+/* Estilos para o toggle/checkbox da planilha de acordos */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #1f6feb;
+}
+
+.toggle-label {
+    margin-bottom: 0 !important;
+    font-size: 12px !important;
+    color: #e6edf3 !important;
+    cursor: pointer;
+}

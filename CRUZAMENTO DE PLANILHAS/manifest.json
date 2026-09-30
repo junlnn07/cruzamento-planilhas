@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Processador de Planilhas",
+  "version": "1.0.0",
+  "description": "Cruza planilhas Excel pelo contrato e gera um resultado organizado.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}

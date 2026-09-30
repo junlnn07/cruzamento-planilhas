@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processador de Planilhas</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="developer-header">
+            <span class="developer-name">Desenvolvido por José Ribas</span>
+        </div>
+
+        <header>
+            <div class="logo">📊</div>
+
+            <div>
+                <h1>Processador de Planilhas</h1>
+                <p>Cruzamento automático de Excel</p>
+            </div>
+        </header>
+
+        <!-- NOVO: Opção/Switch para ativar a 3ª planilha -->
+        <section class="card">
+            <div class="toggle-container">
+                <input type="checkbox" id="toggleAcordos">
+                <label for="toggleAcordos" class="toggle-label">Adicionar planilha acordos</label>
+            </div>
+        </section>
+
+        <section class="card">
+
+            <label>PLANILHA BI</label>
+
+            <div class="file-box">
+                <input
+                    id="biFile"
+                    type="file"
+                    accept=".xlsx,.xls"
+                >
+
+                <span id="biName">
+                    Nenhum arquivo selecionado
+                </span>
+            </div>
+
+            <label>PLANILHA SISCOBRA</label>
+
+            <div class="file-box">
+                <input
+                    id="siscobraFile"
+                    type="file"
+                    accept=".xlsx,.xls"
+                >
+
+                <span id="siscobraName">
+                    Nenhum arquivo selecionado
+                </span>
+            </div>
+
+            <!-- CAMPO DINÂMICO PARA A 3ª PLANILHA -->
+            <div id="acordosContainer" style="display: none; margin-top: 14px;">
+                <label>PLANILHA DE ACORDOS</label>
+
+                <div class="file-box">
+                    <input
+                        id="acordosFile"
+                        type="file"
+                        accept=".xlsx,.xls"
+                    >
+
+                    <span id="acordosName">
+                        Nenhum arquivo selecionado
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <div class="section-header">
+
+                <span>
+                    COLUNAS EXTRAS
+                </span>
+
+                <button id="addColumn">
+                    + Adicionar
+                </button>
+
+            </div>
+
+            <div id="columns"></div>
+
+            <p class="hint">
+                Você pode adicionar até 5 colunas.
+            </p>
+
+        </section>
+
+        <button
+            id="process"
+            class="process"
+        >
+            ⚡ PROCESSAR EXCEL
+        </button>
+
+        <div
+            id="status"
+            class="status"
+        >
+            ● Aguardando arquivos...
+        </div>
+
+        <div class="stats">
+
+            <div>
+                <strong id="rows">
+                    0
+                </strong>
+
+                <span>
+                    Registros
+                </span>
+            </div>
+
+            <div>
+                <strong id="cols">
+                    12
+                </strong>
+
+                <span>
+                    Colunas
+                </span>
+            </div>
+
+        </div>
+
+        <button
+            id="download"
+            class="download"
+            disabled
+        >
+            ⬇ BAIXAR RESULTADO
+        </button>
+
+    </div>
+    
+    <script src="xlsx.full.min.js"></script>
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
